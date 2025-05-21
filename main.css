@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    background: linear-gradient(to bottom, #69a2ff, #0561f5);
+}
+
+.header {
+    text-align: center;
+    color: #CAE9FF;
+    background-color: #1B4965;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+    opacity: 0;
+    animation: SlideAndFadeIn 3s ease-in-out forwards;
+}
+
+@keyframes SlideAndFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.quiz-container {
+    background-color: rgb(203, 255, 166);
+    max-width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 380px;
+}
+
+.progress-bar-container {
+    width: 90%;
+    height: 12px;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.progress-bar-fill {
+    width: 50%;
+    height: 12px;
+    background-color: silver;   
+}
+
+.timer {
+    background-color: greenyellow;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+    border-radius: 60%;
+    padding: 80px 60px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    background-color: powderblue;
+    border: none;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.option-btn:hover {
+    background-color: steelblue;
+}
+
+.question {
+    font-size: 24px;
+    color: tomato;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20px;
+}
